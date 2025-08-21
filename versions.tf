@@ -2,7 +2,7 @@ terraform {
   required_providers {
     netlify = {
       source  = "netlify/netlify"
-      version = "~> 0.4.0"
+      version = "~> 0.2.2"
     }
     random = {
       source  = "hashicorp/random"
@@ -11,10 +11,10 @@ terraform {
   }
 
   cloud {
-    organization = "Techprod.org"
+    organization = "Techprod"
 
     workspaces {
-      name = "Devcloud-project"
+      name = "terraform-netlify-hcp"
     }
   }
 
