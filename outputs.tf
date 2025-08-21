@@ -1,4 +1,4 @@
-output "site_url" {
-  value = netlify_site.static_site.ssl_url
-  description = "Live URL of the deployed site"
+output "site_name" {
+  value       = random_pet.site_name.id
+  description = "Generated unique site name"
 }
